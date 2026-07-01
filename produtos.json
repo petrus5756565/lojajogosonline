@@ -1,0 +1,170 @@
+[
+    {
+        "id": 1,
+        "desc": "Counter-Strike 2",
+        "imagem": "../../public/cs2.jpg",
+        "valor": 123,
+        "precoTexto": "R$ 123,00"
+    },
+    {
+        "id": 2,
+        "desc": "Grand Theft Auto V",
+        "imagem": "../../public/gtav.jpg",
+        "valor": 233,
+        "precoTexto": "R$ 233,00"
+    },
+    {
+        "id": 3,
+        "desc": "Rust",
+        "imagem": "../../public/rust.jpg",
+        "valor": 79,
+        "precoTexto": "R$ 79,00"
+    },
+    {
+        "id": 4,
+        "desc": "EA SPORTS FC 25",
+        "imagem": "../../public/fc25.jpg",
+        "valor": 88,
+        "precoTexto": "R$ 88,00"
+    },
+    {
+        "id": 5,
+        "desc": "Forza Horizon 5",
+        "imagem": "../../public/fh5.jpeg",
+        "valor": 555,
+        "precoTexto": "R$ 555,00"
+    },
+    {
+        "id": 6,
+        "desc": "Terraria",
+        "imagem": "../../public/terraria.jpg",
+        "valor": 123,
+        "precoTexto": "R$ 123,00"
+    },
+    {
+        "id": 7,
+        "desc": "Euro Truck Simulator 2",
+        "imagem": "../../public/ets2.webp",
+        "valor": 123,
+        "precoTexto": "R$ 123,00"
+    },
+    {
+        "id": 8,
+        "desc": "Phasmophobia",
+        "imagem": "../../public/phasmophobia.jpg",
+        "valor": 190,
+        "precoTexto": "R$ 190,00"
+    },
+    {
+        "id": 9,
+        "desc": "Lethal Company",
+        "imagem": "../../public/lethalcompany.jpg",
+        "valor": 122,
+        "precoTexto": "R$ 122,00"
+    },
+    {
+        "id": 10,
+        "desc": "Sons of the Forest",
+        "imagem": "../../public/sonsoftheforest.jpg",
+        "valor": 345,
+        "precoTexto": "R$ 345,00"
+    },
+    {
+        "id": 11,
+        "desc": "Red Dead Redemption 2",
+        "imagem": "../../public/rdr2.jpg",
+        "valor": 677,
+        "precoTexto": "R$ 677,00"
+    },
+    {
+        "id": 12,
+        "desc": "Tom Clancy's Rainbow Six Siege",
+        "imagem": "../../public/r6.jpg",
+        "valor": 223,
+        "precoTexto": "R$ 223,00"
+    },
+    {
+        "id": 13,
+        "desc": "Apex Legends",
+        "imagem": "../../public/apex.jpg",
+        "valor": 222,
+        "precoTexto": "R$ 222,00"
+    },
+    {
+        "id": 14,
+        "desc": "Dead by Daylight",
+        "imagem": "../../public/dbd.jpg",
+        "valor": 343,
+        "precoTexto": "R$ 343,00"
+    },
+    {
+        "id": 15,
+        "desc": "Project Zomboid",
+        "imagem": "../../public/projetctzomboid.jpg",
+        "valor": 234,
+        "precoTexto": "R$ 234,00"
+    },
+    {
+        "id": 16,
+        "desc": "Geometry Dash",
+        "imagem": "../../public/geometrydash.jpg",
+        "valor": 178,
+        "precoTexto": "R$ 178,00"
+    },
+    {
+        "id": 17,
+        "desc": "Hollow Knight",
+        "imagem": "../../public/hollowknight.webp",
+        "valor": 789,
+        "precoTexto": "R$ 789,00"
+    },
+    {
+        "id": 18,
+        "desc": "Cyberpunk 2077",
+        "imagem": "../../public/cyberpunk2077.jpg",
+        "valor": 89,
+        "precoTexto": "R$ 89,00"
+    },
+    {
+        "id": 19,
+        "desc": "War Thunder",
+        "imagem": "../../public/warthunder.jpg",
+        "valor": 345,
+        "precoTexto": "R$ 345,00"
+    },
+    {
+        "id": 20,
+        "desc": "Among Us",
+        "imagem": "../../public/amongus.jpg",
+        "valor": 123,
+        "precoTexto": "R$ 123,00"
+    },
+    {
+        "id": 21,
+        "desc": "Garry's Mod",
+        "imagem": "../../public/garrymod.jpg",
+        "valor": 456,
+        "precoTexto": "R$ 456,00"
+    },
+    {
+        "id": 22,
+        "desc": "Sea of Thieves",
+        "imagem": "../../public/seaofthieves.jpg",
+        "valor": 122,
+        "precoTexto": "R$ 122,00"
+    },
+    {
+        "id": 23,
+        "desc": "Valheim",
+        "imagem": "../../public/valheim.jpg",
+        "valor": 123,
+        "precoTexto": "R$ 123,00"
+    },
+    {
+        "id": 24,
+        "desc": "Dying Light",
+        "imagem": "../../public/dying light.jpg",
+        "valor": 123,
+        "precoTexto": "R$ 123,00"
+    }
+]

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steam Store - Sistema Comercial Completo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- TELA DE LOGIN (BLOQUEIA O SITE ATÉ FAZER LOG IN) -->
+    <div id="tela-login" class="overlay-login">
+        <div class="card-login">
+            <h2>🕹️ STEAM<span>LOGIN</span></h2>
+            <p>Insira suas credenciais simuladas para acessar a loja</p>
+            <form onsubmit="executarLogin(event)">
+                <div class="campo-input">
+                    <label>Usuário ou Email</label>
+                    <input type="text" id="usuario" required placeholder="admin">
+                </div>
+                <div class="campo-input">
+                    <label>Senha</label>
+                    <input type="password" id="senha" required placeholder="1234">
+                </div>
+                <button type="submit" class="btn-entrar">Iniciar Sessão</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- CONTEÚDO DA LOJA (SÓ APARECE APÓS LOGIN) -->
+    <div id="conteudo-loja" style="display: none;">
+        <!-- BARRA DE NAVEGAÇÃO -->
+        <header>
+            <div class="nav-container">
+                <div class="logo">🕹️ STEAM<span>VIRTUAL</span></div>
+                <nav>
+                    <ul>
+                        <li><a href="#" class="active-link">Loja</a></li>
+                        <li><span id="nome-usuario-logado" style="color: #66c0f4; font-size: 13px;"></span></li>
+                        <li>
+                            <button id="btn-abrir-carrinho" class="cart-btn" onclick="toggleCarrinho()">
+                                🛒 Carrinho <span class="cart-counter" id="cart-count">0</span>
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- CATÁLOGO -->
+        <main>
+            <div class="store-headline">
+                <h2>Destaques em Evidência</h2>
+                <p>Escolha seus jogos favoritos e monte seu carrinho de compras.</p>
+            </div>
+            <div class="games-grid" id="games-container"></div>
+        </main>
+    </div>
+
+    <!-- PAINEL DO CARRINHO LATERAL -->
+    <div id="janela-carrinho" class="modal-carrinho" onclick="fecharNoFundo(event)">
+        <div class="conteudo-carrinho">
+            <div class="topo-carrinho">
+                <h3>Sacola de Compras</h3>
+                <button class="btn-fechar" onclick="toggleCarrinho()">✕</button>
+            </div>
+            
+            <div id="itens-do-carrinho" class="lista-itens">
+                <p class="carrinho-vazio">Seu carrinho está limpo no momento.</p>
+            </div>
+            
+            <div class="rodape-carrinho">
+                <!-- SELEÇÃO DE FORMA DE PAGAMENTO -->
+                <div class="secao-pagamento">
+                    <label for="metodo-pagamento">Forma de Pagamento:</label>
+                    <select id="metodo-pagamento" class="select-pagamento">
+                        <option value="Pix">⚡ Pix (Aprovação Imediata)</option>
+                        <option value="Cartão de Crédito">💳 Cartão de Crédito</option>
+                        <option value="Cartão de Débito">🏦 Cartão de Débito</option>
+                        <option value="Boleto Bancário">📄 Boleto Bancário (1 a 2 dias)</option>
+                    </select>
+                </div>
+
+                <div class="linha-total">
+                    <span>Subtotal estimado:</span>
+                    <span id="valor-total">R$ 0,00</span>
+                </div>
+                <button class="btn-finalizar" onclick="processarCheckout()">Finalizar e Emitir Nota</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

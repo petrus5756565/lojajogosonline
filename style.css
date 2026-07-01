@@ -1,0 +1,225 @@
+:root {
+    --bg-main: #1b2838;
+    --bg-nav: #171a21;
+    --bg-card: #16202d;
+    --text-blue: #66c0f4;
+    --text-light: #c7d5e0;
+    --btn-green: #5c7e10;
+    --btn-green-hover: #78a317;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-light);
+}
+
+/* --- TELA DE LOGIN EM OVERLAY --- */
+.overlay-login {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #111822;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.card-login {
+    background-color: var(--bg-card);
+    width: 100%;
+    max-width: 360px;
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.7);
+    border: 1px solid rgba(255,255,255,0.03);
+}
+
+.card-login h2 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.card-login h2 span { color: var(--text-blue); }
+
+.card-login p {
+    font-size: 13px;
+    color: #8f98a0;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.campo-input {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.campo-input label {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.campo-input input {
+    background-color: #101721;
+    border: 1px solid #2a3f5a;
+    padding: 10px;
+    color: #fff;
+    border-radius: 3px;
+    outline: none;
+}
+
+.campo-input input:focus {
+    border-color: var(--text-blue);
+}
+
+.btn-entrar {
+    background-color: #265e8a;
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+.btn-entrar:hover { background-color: #3179b1; }
+
+/* --- INTERFACE DA LOJA --- */
+header {
+    background-color: var(--bg-nav);
+    padding: 18px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.logo { font-size: 22px; font-weight: 800; color: #fff; }
+.logo span { color: var(--text-blue); font-weight: 400; }
+
+nav ul { display: flex; list-style: none; align-items: center; gap: 28px; }
+nav a { color: #b8b6b4; text-decoration: none; font-size: 13px; font-weight: 600; }
+
+.cart-btn {
+    background-color: #213145;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+}
+
+.cart-counter { background-color: var(--text-blue); color: #0d131a; padding: 2px 8px; border-radius: 20px; font-weight: 800; }
+
+main { max-width: 1100px; margin: 40px auto; padding: 0 24px; }
+.store-headline h2 { font-size: 18px; text-transform: uppercase; color: #fff; margin-bottom: 4px; }
+.store-headline p { font-size: 14px; color: #8f98a0; margin-bottom: 25px; }
+
+.games-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 24px; }
+.game-card { background: linear-gradient(135deg, #1f2d3d 0%, #16202d 100%); border-radius: 6px; overflow: hidden; box-shadow: 0 8px 20px rgba(0,0,0,0.5); border: 1px solid rgba(255, 255, 255, 0.02); }
+.game-thumb { width: 100%; height: 140px; object-fit: cover; }
+.game-details { padding: 16px; }
+.game-title { font-size: 15px; font-weight: 700; color: #fff; margin-bottom: 12px; }
+.game-footer { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; }
+.discount-badge { background-color: #4c6b22; color: #a4d007; padding: 3px 6px; font-weight: 700; font-size: 12px; border-radius: 3px; }
+.price { color: #fff; font-weight: 700; }
+
+.btn-buy {
+    background-color: var(--btn-green);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 700;
+}
+.btn-buy:hover { background-color: var(--btn-green-hover); }
+
+/* --- CARRINHO E FORMULÁRIO COMERCIAL --- */
+.modal-carrinho { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); backdrop-filter: blur(4px); display: none; justify-content: flex-end; z-index: 1000; }
+.modal-carrinho.active { display: flex; }
+.conteudo-carrinho { background-color: #171d25; width: 100%; max-width: 420px; height: 100%; display: flex; flex-direction: column; }
+.topo-carrinho { background-color: var(--bg-nav); padding: 24px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255, 255, 255, 0.05); }
+.topo-carrinho h3 { color: #fff; }
+.btn-fechar { background: none; border: none; color: #8f98a0; font-size: 20px; cursor: pointer; }
+
+.lista-itens { padding: 20px; flex-grow: 1; overflow-y: auto; }
+.carrinho-vazio { text-align: center; color: #626d77; padding-top: 40px; }
+.item-carrinho { display: flex; justify-content: space-between; align-items: center; padding: 14px 0; border-bottom: 1px solid #202b38; }
+.btn-remover { background: none; border: none; color: #ff5555; cursor: pointer; font-size: 12px; }
+
+.rodape-carrinho { background-color: var(--bg-nav); padding: 24px; border-top: 1px solid rgba(255, 255, 255, 0.05); }
+
+/* Seletor Comercial de Pagamento */
+.secao-pagamento {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.secao-pagamento label { font-size: 12px; text-transform: uppercase; color: #8f98a0; font-weight: bold; }
+.select-pagamento {
+    background-color: #101721;
+    border: 1px solid #2a3f5a;
+    padding: 10px;
+    color: #fff;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.linha-total { display: flex; justify-content: space-between; font-size: 16px; font-weight: 700; color: #8f98a0; margin-bottom: 20px; }
+#valor-total { color: #a4d007; font-size: 20px; }
+
+.btn-finalizar {
+    background-color: var(--btn-green);
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 14px;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.btn-finalizar:hover { background-color: var(--btn-green-hover); }
+
+.featured-img {
+    width: 100%;
+    height: 380px;
+    /* Busca a imagem direto da sua pasta local public */
+    background: #000 url('../../public/gtav.jpg') no-repeat center;
+    background-size: cover;
+    background-position: center 20%;
+}
+
